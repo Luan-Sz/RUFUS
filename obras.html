@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Obras</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00bfa5;
+    }
+
+    form {
+      background-color: #1c1c1c;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto 30px auto;
+      border-radius: 8px;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    form button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background-color: #00796b;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    form button:hover {
+      background-color: #005f56;
+    }
+
+    table {
+      width: 100%;
+      background-color: #1c1c1c;
+      border-collapse: collapse;
+      margin-top: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cadastro de Obras</h1>
+
+  <form>
+    <input type="text" placeholder="Nome da Obra">
+    <input type="date" placeholder="Prazo">
+    <input type="number" placeholder="Custo Estimado (R$)">
+    <input type="text" placeholder="Fornecedor">
+    <select>
+      <option>Status da Obra</option>
+      <option>Em Execução</option>
+      <option>Atrasada</option>
+      <option>Concluída</option>
+    </select>
+    <button>Salvar</button>
+  </form>
+
+  <table>
+    <tr>
+      <th>Obra</th>
+      <th>Prazo</th>
+      <th>Custo</th>
+      <th>Fornecedor</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>Residencial Alfa</td>
+      <td>10/12/2025</td>
+      <td>350.000</td>
+      <td>Construtora NBR</td>
+      <td>Em Execução</td>
+    </tr>
+    <tr>
+      <td>Prédio Comercial Beta</td>
+      <td>22/03/2026</td>
+      <td>890.000</td>
+      <td>ObrasPrime</td>
+      <td>Atrasada</td>
+    </tr>
+  </table>
+
+</body>
+</html>
